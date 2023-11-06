@@ -268,8 +268,8 @@ section {
 }
 
 .about-containers {
-    gap: 2rem;
-    margin: 2rem 0;
+    gap: 0.5rem;
+    margin: 1rem 0;
 }
 
 .about-details-container {
@@ -293,7 +293,7 @@ section {
 }
 
 .details-container {
-    padding: 1.5rem;
+    padding: 1rem;
     flex: 1;
     background: white;
     border-radius: 2rem;
@@ -312,3 +312,46 @@ section {
     width: 400px;
     margin: auto 0;
 }*/
+
+/* EXPERIENCE SECTION */
+
+#experience {
+    position: relative;
+}
+
+.experience-sub-title {
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.experience-details.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.article-container {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+}
+
+article {
+    display: flex;
+    width: 10rem;
+    justify-content: left;
+    gap: 0.5rem;
+}
+
+article .icon {
+    cursor: default;
+}
+
+.experience-sub-title {
+    font-size: medium;
+}

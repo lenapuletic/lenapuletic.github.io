@@ -266,6 +266,7 @@ section {
 
 #experience {
     position: relative;
+    margin-bottom: 2rem;
 }
 
 #experience .about-containers {
@@ -325,6 +326,7 @@ article .icon {
 
 #projects {
     position: relative;
+    margin-bottom: 2rem;
 }
 
 .color-container {
@@ -358,6 +360,7 @@ article .icon {
 
 #about {
     position: relative;
+    margin-top: 2rem;
 }
 
 .about-containers {

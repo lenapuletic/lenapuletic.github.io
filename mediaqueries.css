@@ -8,6 +8,10 @@
     .about-containers {
         flex-wrap: wrap;
     }
+   
+    #projects .details-container {
+        height: min-content;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -42,6 +46,12 @@
     #react {
         justify-content: flex-start;
     }
+    #projects .about-containers{
+        padding-top: 10vw;
+    }
+    #projects .details-container {
+        height: min-content;
+    }
     
 }
 
@@ -52,8 +62,12 @@
     }
     #profile {
         height: 83vh;
-        margin-bottom: 0;
+        margin-bottom: 90px;
     }
+    #about p{
+        padding-top: 10vw;
+    }
+    
     article {
         font-size: 1rem;
     }
@@ -98,5 +112,10 @@
     .text-container {
         text-align: justify;
     }
+    #projects .about-containers{
+        flex-direction: column;
+        padding-top: 10vw;
+    }
+   
    
 }

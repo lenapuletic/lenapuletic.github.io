@@ -420,7 +420,7 @@ article .icon {
     padding: 0 10px;
 }
 
-#about .icon:hover {
+#about .details-container .icon:hover {
     cursor: default;
 }
 

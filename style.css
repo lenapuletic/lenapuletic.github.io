@@ -346,17 +346,12 @@ article .icon {
     height: 90%;
 }
 
-.project-title {
-    margin: 1rem;
-    color: black;
+
+.color-container {
+    flex: 1 0 auto; /* Allow flex to grow, don't allow it to shrink or basis size auto */
+    min-width: 100px;
 }
 
-.project-btn {
-    color: black;
-    border-color: rgb(163, 163, 163);
-    padding: 10px;
-    margin: 0;
-}
 
 /* ABOUT SECTION */
 

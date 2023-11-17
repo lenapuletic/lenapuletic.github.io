@@ -9,9 +9,12 @@
 </head>
 <body>
     <!-- NAVBAR -->
+    <!-- Desktop navigation -->
     <nav id="desktop-nav">
+        <!-- Logo -->
         <div class="logo">Lena Puletić</div>
         <div>
+            <!-- Navigation links -->
             <ul class="nav-links">
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -20,14 +23,17 @@
             </ul>
         </div>
     </nav>
+    <!-- Hamburger (mobile) navigation -->
     <nav id="hamburger-nav">
         <div class="logo">Lena Puletić</div>
         <div class="hamburger-menu">
+            <!-- Hamburger icon for mobile -->
             <div class="hamburger-icon" onclick="toggleMenu()">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
+            <!-- Menu links for mobile -->
             <div class="menu-links">
                 <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
@@ -40,13 +46,16 @@
     <!-- SECTIONS -->
     <!-- Profile Section -->
     <section id="profile">
+        <!-- Profile picture -->
         <div class="section_pic-container">
             <img src="./assets/profile-pic2.png" alt="Lena Puletic profile picture">
         </div>
+        <!-- Profile text -->
         <div class="section_text">
             <p class="section_text_p1">Hello, I'm</p>
             <h1 class="title">Lena Puletić</h1>
             <p class="section_text_p2">Frontend Developer</p>
+            <!-- Buttons and social icons -->
             <div class="btn-container">
                 <button class="btn btn-color-2" onclick="window.open('./assets/Lena-Puletic-Resume.pdf')">
                     My CV</button>
@@ -66,10 +75,13 @@
 
     <!-- Experience Section-->
     <section id="experience">
+        <!-- Section heading -->
         <p class="section_text_p1">Explore My</p>
         <h1 class="title">Experience</h1>
+        <!-- Experience details -->
         <div class="experience-details-container">
             <div class="about-containers">
+                <!-- Good knowledge -->
                 <div class="details-container">
                     <h2 class="experience-sub-title">Good knowledge of</h2>
                     <div class="article-container">
@@ -92,6 +104,7 @@
                     </div>
                     
                 </div>
+                <!-- Basic knowledge -->
                 <div class="details-container">
                     <h2 class="experience-sub-title">Basic knowledge of</h2>
                     <div class="article-container">
@@ -121,15 +134,18 @@
                
             </div>
         </div>
+        <!-- Arrow icon for navigation -->
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
+        <!-- Section heading -->
         <p class="section_text_p1">Browse My Recent</p>
         <h1 class="title">Projects</h1>
         <div class="experience-details-container">
            <div class="about-containers">
+                <!-- Project 1 -->
                 <div class="details-container color-container" id="project3">
                     <div class="article-container">
                         <img src="./assets/calculator-app.png" alt="Project 3" class="project-img">
@@ -144,6 +160,7 @@
                         </a>
                     </div>
                 </div>
+                <!-- Project 2 -->
                 <div class="details-container color-container">
                     <div class="article-container">
                         <img src="./assets/project-2.png" alt="Project 2" class="project-img">
@@ -158,32 +175,36 @@
                         </a>
                     </div>
                 </div>
+                <!-- Project 3 -->
                 <div class="details-container color-container">
                     <div class="article-container">
-                        <img src="./assets/project-1.png" alt="Project 1" class="project-img">
+                        <img src="./assets/project-1.jpeg" alt="Project 1" class="project-img">
                     </div>
-                    <h2 class="experience-sub-title project-title">FAQ Accordion Card</h2>
+                    <h2 class="experience-sub-title project-title">Form for data input</h2>
                     <div class="btn-container">
-                        <a href="https://lenapuletic.github.io/FAQ-accordion-card/" target="_blank">
+                        <a href="https://lenapuletic.github.io/form/" target="_blank">
                             <button class="btn btn-color-2 project-btn">Live Demo</button>
                         </a>
-                        <a href="https://github.com/lenapuletic/FAQ-accordion-card" target="_blank">
+                        <a href="https://github.com/lenapuletic/form" target="_blank">
                             <button class="btn btn-color-2 project-btn">Github</button>
                         </a>
                     </div>
                 </div>
             </div> 
         </div>
+        <!-- Arrow icon for navigation -->
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#about'">
 
     </section>
 
     <!-- About Section -->
     <section id="about">
+        <!-- Section heading -->
         <p class="section_text_p1">Get To Know More</p>
         <h1 class="title">About Me</h1>
         <div class="section-container">
             <div class="about-details-container">
+                <!-- Personal description -->
                 <div class="text-container">
                     <p>
                         I am a passionate web developer in the making, on a quest for a <b>Frontend Internship</b>. 
@@ -193,43 +214,33 @@
                     </p>
                 </div>
                 <div class="about-containers">
+                    <!-- Education -->
                     <div class="details-container">
                         <img src="assets/experience.png" alt="Experience icon" class="icon">
                         <h3>Education</h3>
                         <p>Faculty of Organizational Sciences<br/></p>
                         <p class="smaller-font">Information Systems and Technology</p>
                     </div>
+                    <!-- Completed courses -->
                     <div class="details-container">
                         <img src="assets/education.png" alt="Education icon" class="icon">
                         <h3>Completed Course</h3>
                         <p>FreeCodeCamp<br/></p>
                         <p class="smaller-font">Fronted Development</p>
                     </div>
-                    <!--<div class="details-container">
-                        <img src="assets/education.png" alt="Education icon" class="icon">
-                        <h3>Hobby</h3>
-                        <p">Sailing<br/></p>
-                        <p class="smaller-font">470 class</p>
-                        
-                    </div>-->
-                    <!--<div class="details-container">
-                        <div class="section_pic-container">
-                            <img src="./assets/about-me-pic.png" alt="Profile picture" class="about-pic">
-                        </div>
-                    </div>-->
-                   
-                    
                 </div>
             </div>
-            
         </div>
+        <!-- Arrow icon for navigation-->
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
     </section>
 
     <!-- Contact Section-->
     <section id="contact">
+        <!-- Section heading -->
         <p class="section_text_p1">Get in Touch</p>
         <h1 class="title">Contact Me</h1>
+        <!-- Contact information -->
         <div class="contact-info-upper-container">
             <div class="contact-info-container">
                 <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
@@ -244,6 +255,7 @@
 
     <!-- Footer -->
     <footer>
+        <!-- Navigation links -->
         <nav>
             <div class="nav-links-container">
                 <ul class="nav-links">

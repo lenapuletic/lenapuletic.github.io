@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lena Puletić Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <!-- Desktop navigation -->
+    <nav id="desktop-nav">
+        <!-- Logo -->
+        <div class="logo">Lena Puletić</div>
+        <div>
+            <!-- Navigation links -->
+            <ul class="nav-links">
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Hamburger (mobile) navigation -->
+    <nav id="hamburger-nav">
+        <div class="logo">Lena Puletić</div>
+        <div class="hamburger-menu">
+            <!-- Hamburger icon for mobile -->
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!-- Menu links for mobile -->
+            <div class="menu-links">
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- SECTIONS -->
+    <!-- Profile Section -->
+    <section id="profile">
+        <!-- Profile picture -->
+        <div class="section_pic-container">
+            <img src="./assets/profile-pic2.png" alt="Lena Puletic profile picture">
+        </div>
+        <!-- Profile text -->
+        <div class="section_text">
+            <p class="section_text_p1">Hello, I'm</p>
+            <h1 class="title">Lena Puletić</h1>
+            <p class="section_text_p2">Frontend Developer</p>
+            <!-- Buttons and social icons -->
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Lena-Puletic-CV.pdf')">
+                    My CV</button>
+                <button class="btn btn-color-1" onclick="location.href='#contact'">
+                    Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <a href="https://www.linkedin.com/in/lena-puletic/" target="_blank">
+                    <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon">
+                </a>
+                <a href="https://github.com/lenapuletic" target="_blank">
+                    <img src="./assets/github.png" alt="My GitHub profile" class="icon">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section-->
+    <section id="experience">
+        <!-- Section heading -->
+        <p class="section_text_p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <!-- Experience details -->
+        <div class="experience-details-container">
+            <div class="experience-containers">
+                <!-- Work Expirience -->
+                <div class="details-container work-experience">
+                    <h2 class="experience-sub-title">Work Experience</h2>
+                    <div class="article-container">
+                        <article id="work-experience">
+                            <div class="work-heading">
+                                <img src="./assets//checkmark.png" alt="ExperienceIcon" class="icon">
+                                <h3>Software Engineer</h3>
+                            </div>
+                            <span>(6+ months)</span>
+                        </article>
+                    </div>
+                    
+                </div>
+                <!-- Good knowledge -->
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Good knowledge of</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets//checkmark.png" alt="ExperienceIcon" class="icon">
+                            <h3>HTML</h3>
+                        </article>
+                        <article>
+                            <img src="./assets//checkmark.png" alt="ExperienceIcon" class="icon">
+                            <h3>CSS</h3>
+                        </article>
+                        <article>
+                            <img src="./assets//checkmark.png" alt="ExperienceIcon" class="icon">
+                            <h3>Sass</h3>
+                        </article>
+                        <article>
+                            <img src="./assets//checkmark.png" alt="ExperienceIcon" class="icon">
+                            <h3>JavaScript</h3>
+                        </article>
+                        <article>
+                            <img src="./assets//checkmark.png" alt="ExperienceIcon" class="icon">
+                            <h3>TypeScript</h3>
+                        </article>
+                        <article>
+                            <img src="./assets//checkmark.png" alt="ExperienceIcon" class="icon">
+                            <h3>Angular</h3>
+                        </article>
+                        <article>
+                            <img src="./assets//checkmark.png" alt="ExperienceIcon" class="icon">
+                            <h3>Git</h3>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Arrow icon for navigation -->
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <!-- Section heading -->
+        <p class="section_text_p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+           <div class="about-containers">
+                <!-- Project 1 -->
+                <div class="details-container color-container" id="project2">
+                    <div class="article-container">
+                        <img src="./assets/natours.png" alt="Project 2" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Natours website</h2>
+                    <div class="btn-container projects-btn-container">
+                        <a href="https://lenapuletic.github.io/natours/" target="_blank">
+                            <button class="btn btn-color-2 project-btn">Live Demo</button>
+                        </a>
+                        <a href="https://github.com/lenapuletic/natours" target="_blank">
+                            <button class="btn btn-color-2 project-btn">Github</button>
+                        </a>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="details-container color-container" id="project3">
+                    <div class="article-container">
+                        <img src="./assets/calculator-app.png" alt="Project 3" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Calculator App</h2>
+                    <div class="btn-container projects-btn-container">
+                        <a href="https://lenapuletic.github.io/calculator-app/" target="_blank">
+                            <button class="btn btn-color-2 project-btn">Live Demo</button>
+                        </a>
+                        <a href="https://github.com/lenapuletic/calculator-app" target="_blank">
+                            <button class="btn btn-color-2 project-btn">Github</button>
+                        </a>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/organick.png" alt="Project 1" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Organick website</h2>
+                    <div class="btn-container projects-btn-container">
+                        <a href="https://lenapuletic.github.io/organick-website/" target="_blank">
+                            <button class="btn btn-color-2 project-btn">Live Demo</button>
+                        </a>
+                        <a href="https://github.com/lenapuletic/organick-website" target="_blank">
+                            <button class="btn btn-color-2 project-btn">Github</button>
+                        </a>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <!-- Arrow icon for navigation -->
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#about'">
+
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <!-- Section heading -->
+        <p class="section_text_p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="about-details-container">
+                <!-- Personal description -->
+                <div class="text-container">
+                    <p>
+                        I am a passionate Web Developer, looking for a <b>Frontend Junior position</b>. 
+                        <br><br>I gained valuable frontend skills during a 6-month internship and am now seeking a junior position where I can apply my knowledge.<br>Passionate about creating user-friendly interfaces, I have hands-on experience with HTML, CSS ,Sass, JavaScript, TypeScript, and Angular, developed in collaborative Agile team environment.<br><br>
+                    </p>
+                </div>
+                <div class="about-containers">
+                    <!-- Education -->
+                    <div class="details-container">
+                        <img src="assets/experience.png" alt="Experience icon" class="icon">
+                        <h3>Education</h3>
+                        <p>Faculty of Organizational Sciences<br/></p>
+                        <p class="smaller-font">Information Systems and Technology</p>
+                    </div>
+                    <!-- Completed courses -->
+                    <div class="details-container certification" onclick="window.open('./assets/GCP-LenaPuletic.pdf')">
+                        <img src="assets/education.png" alt="Education icon" class="icon">
+                        <h3>Certification</h3>
+                        <p>Google Cloud Platform<br/></p>
+                        <p class="smaller-font">Cloud Digital Leader</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Arrow icon for navigation-->
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
+    </section>
+
+    <!-- Contact Section-->
+    <section id="contact">
+        <!-- Section heading -->
+        <p class="section_text_p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <!-- Contact information -->
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
+                <p><a href="mailto:puleticlena@gmail.com" target="_blank">puleticlena@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="Linkedin icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/lena-puletic/" target="_blank">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Navigation links -->
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+

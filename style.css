@@ -306,7 +306,7 @@ article {
     gap: 3vh;
 }
 
-#work-experience {
+.work-experience {
     width: 70vw;
     margin: auto;
     display: flex;
@@ -330,7 +330,7 @@ article {
 article {
     display: flex;
     width: 10rem;
-    justify-content: left;
+    justify-content: center;
     gap: 0.5rem;
 }
 

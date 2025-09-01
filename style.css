@@ -302,7 +302,6 @@ article {
 
 .experience-containers {
     display: grid;
-    grid-template-rows: 1fr 3fr;
     gap: 3vh;
 }
 
@@ -366,10 +365,6 @@ article .icon {
     height: 90%;
 }
 
-/* .project-btn {
-    width: fit-content;
-} */
-
 .color-container {
     flex: 1 0 auto; /* Allow flex to grow, don't allow it to shrink or basis size auto */
     min-width: 100px;
@@ -426,7 +421,7 @@ article .icon {
 
 .text-container {
     text-align: center;
-    font-size: small;
+    font-size: medium;
     display: flex;
 }
 

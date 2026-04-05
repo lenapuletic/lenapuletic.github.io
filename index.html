@@ -3,439 +3,514 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lena Puletić Portfolio</title>
+    <meta
+      name="description"
+      content="Lena Puletić — Frontend Engineer. Portfolio of Angular and React projects, experience, and contact information."
+    />
+    <title>Lena Puletić — Frontend Engineer</title>
+    <link rel="canonical" href="https://lenapuletic.github.io/" />
+    <link rel="icon" href="./assets/profile-pic.png" type="image/png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://lenapuletic.github.io/" />
+    <meta property="og:title" content="Lena Puletić — Frontend Engineer" />
+    <meta
+      property="og:description"
+      content="Frontend engineer building Angular apps, micro-frontends, and engaging user experiences. Projects, experience, and CV."
+    />
+    <meta
+      property="og:image"
+      content="https://lenapuletic.github.io/assets/profile-pic.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
-    <!-- NAVBAR -->
-    <!-- Desktop navigation -->
-    <nav id="desktop-nav">
-      <div>
-        <!-- Navigation links -->
-        <ul class="nav-links">
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <!-- Hamburger (mobile) navigation -->
-    <nav id="hamburger-nav">
-      <div class="hamburger-menu">
-        <!-- Hamburger icon for mobile -->
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
+    <header class="site-header">
+      <nav id="desktop-nav" aria-label="Primary">
+        <div>
+          <ul class="nav-links">
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
-        <!-- Menu links for mobile -->
-        <div class="menu-links">
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-
-    <!-- SECTIONS -->
-    <!-- Profile Section -->
-    <section id="profile">
-      <!-- Profile picture -->
-      <div class="section_pic-container">
-        <img
-          src="./assets/profile-pic2.png"
-          alt="Lena Puletic profile picture"
-        />
-      </div>
-      <!-- Profile text -->
-      <div class="section_text">
-        <p class="section_text_p1">Hello, I'm</p>
-        <h1 class="title">Lena Puletić</h1>
-        <p class="section_text_p2">Frontend Engineer</p>
-        <!-- Buttons and social icons -->
-        <div class="btn-container">
+      </nav>
+      <nav id="hamburger-nav" aria-label="Primary mobile">
+        <div class="hamburger-menu">
           <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/Lena_Puletic_CV.pdf')"
+            type="button"
+            class="hamburger-icon"
+            aria-expanded="false"
+            aria-controls="mobile-menu-links"
+            aria-label="Open menu"
           >
-            My CV
+            <span></span>
+            <span></span>
+            <span></span>
           </button>
-          <button class="btn btn-color-1" onclick="location.href = '#contact'">
-            Contact Info
-          </button>
+          <ul id="mobile-menu-links" class="menu-links">
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
-        <div id="socials-container">
-          <a href="https://www.linkedin.com/in/lena-puletic/" target="_blank">
-            <img
-              src="./assets/linkedin.png"
-              alt="My LinkedIn profile"
-              class="icon"
-            />
-          </a>
-          <a href="https://github.com/lenapuletic" target="_blank">
-            <img
-              src="./assets/github.png"
-              alt="My GitHub profile"
-              class="icon"
-            />
-          </a>
-        </div>
-      </div>
-    </section>
+      </nav>
+    </header>
 
-    <!-- Projects Section -->
-    <section id="projects">
-      <!-- Section heading -->
-      <p class="section_text_p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <!-- Project 1 -->
-          <div class="details-container color-container" id="project1">
-            <div class="article-container">
-              <img
-                src="./assets/weather.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">WeatherPlan</h2>
-            <div class="btn-container projects-btn-container">
-              <a
-                href="https://lenapuletic.github.io/weather-plan/"
-                target="_blank"
-              >
-                <button class="btn btn-color-2 project-btn">Live Demo</button>
-              </a>
-              <a
-                href="https://github.com/lenapuletic/weather-plan"
-                target="_blank"
-              >
-                <button class="btn btn-color-2 project-btn">Github</button>
-              </a>
-            </div>
+    <main id="main-content">
+      <section id="profile">
+        <div class="section_pic-container">
+          <img
+            src="./assets/profile-pic.png"
+            alt="Lena Puletic profile picture"
+          />
+        </div>
+        <div class="section_text">
+          <p class="section_text_p1">Hello, I'm</p>
+          <h1 class="title">Lena Puletić</h1>
+          <p class="section_text_p2">Frontend Engineer</p>
+          <div class="btn-container">
+            <a
+              class="btn btn-color-2"
+              href="./assets/cv.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              >View my CV</a
+            >
+            <a class="btn btn-color-1" href="#contact">Contact Info</a>
           </div>
-          <!-- Project 2 -->
-          <div class="details-container color-container" id="project2">
-            <div class="article-container">
+          <div id="socials-container">
+            <a
+              href="https://www.linkedin.com/in/lena-puletic/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
-                src="./assets/react-kanban.png"
-                alt="Project 2"
-                class="project-img"
+                src="./assets/linkedin.png"
+                alt="My LinkedIn profile"
+                class="icon"
+                loading="lazy"
               />
-            </div>
-            <h2 class="experience-sub-title project-title">Kanban Board</h2>
-            <div class="btn-container projects-btn-container">
-              <a
-                href="https://lenapuletic.github.io/react-kanban/"
-                target="_blank"
-              >
-                <button class="btn btn-color-2 project-btn">Live Demo</button>
-              </a>
-              <a
-                href="https://github.com/lenapuletic/react-kanban"
-                target="_blank"
-              >
-                <button class="btn btn-color-2 project-btn">Github</button>
-              </a>
-            </div>
+            </a>
+            <a
+              href="https://github.com/lenapuletic"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="./assets/github.png"
+                alt="My GitHub profile"
+                class="icon"
+                loading="lazy"
+              />
+            </a>
           </div>
-          <!-- Project 3 -->
-          <div class="details-container color-container" id="project3">
-            <div class="article-container">
-              <img
-                src="./assets/natours.png"
-                alt="Project 3"
-                class="project-img"
-              />
+        </div>
+      </section>
+
+      <section id="projects">
+        <p class="section_text_p1">Browse My Recent</p>
+        <h2 class="title">Projects</h2>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container" id="project1">
+              <div class="project-img-wrap">
+                <img
+                  src="./assets/weather.png"
+                  alt="WeatherPlan app screenshot"
+                  class="project-img"
+                  loading="lazy"
+                />
+              </div>
+              <h3 class="experience-sub-title project-title">WeatherPlan</h3>
+              <p class="project-desc">
+                Plan activities with live weather data.
+              </p>
+              <ul class="project-tags" aria-label="Technologies">
+                <li class="tag">Angular</li>
+                <li class="tag">TypeScript</li>
+                <li class="tag">SCSS</li>
+              </ul>
+              <div class="btn-container projects-btn-container">
+                <a
+                  class="btn btn-color-2 project-btn"
+                  href="https://lenapuletic.github.io/weather-plan/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Live Demo</a
+                >
+                <a
+                  class="btn btn-color-2 project-btn"
+                  href="https://github.com/lenapuletic/weather-plan"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub</a
+                >
+              </div>
             </div>
-            <h2 class="experience-sub-title project-title">Natours website</h2>
-            <div class="btn-container projects-btn-container">
-              <a href="https://lenapuletic.github.io/natours/" target="_blank">
-                <button class="btn btn-color-2 project-btn">Live Demo</button>
-              </a>
-              <a href="https://github.com/lenapuletic/natours" target="_blank">
-                <button class="btn btn-color-2 project-btn">Github</button>
-              </a>
+            <div class="details-container color-container" id="project2">
+              <div class="project-img-wrap">
+                <img
+                  src="./assets/react-kanban.png"
+                  alt="Kanban board app screenshot"
+                  class="project-img"
+                  loading="lazy"
+                />
+              </div>
+              <h3 class="experience-sub-title project-title">Kanban Board</h3>
+              <p class="project-desc">
+                Drag-and-drop columns and cards for lightweight task tracking.
+              </p>
+              <ul class="project-tags" aria-label="Technologies">
+                <li class="tag">React</li>
+                <li class="tag">TypeScript</li>
+                <li class="tag">Tailwind CSS</li>
+              </ul>
+              <div class="btn-container projects-btn-container">
+                <a
+                  class="btn btn-color-2 project-btn"
+                  href="https://lenapuletic.github.io/react-kanban/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Live Demo</a
+                >
+                <a
+                  class="btn btn-color-2 project-btn"
+                  href="https://github.com/lenapuletic/react-kanban"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub</a
+                >
+              </div>
             </div>
-          </div>
-          <!-- Project 4 -->
-          <div class="details-container color-container" id="project4">
-            <div class="article-container">
-              <img
-                src="./assets/calculator-app.png"
-                alt="Project 4"
-                class="project-img"
-              />
+            <div class="details-container color-container" id="project3">
+              <div class="project-img-wrap">
+                <img
+                  src="./assets/natours.png"
+                  alt="Natours landing page screenshot"
+                  class="project-img"
+                  loading="lazy"
+                />
+              </div>
+              <h3 class="experience-sub-title project-title">Natours</h3>
+              <p class="project-desc">
+                Marketing-style landing page for a fictional nature-tours brand.
+              </p>
+              <ul class="project-tags" aria-label="Technologies">
+                <li class="tag">HTML</li>
+                <li class="tag">CSS</li>
+                <li class="tag">Sass</li>
+              </ul>
+              <div class="btn-container projects-btn-container">
+                <a
+                  class="btn btn-color-2 project-btn"
+                  href="https://lenapuletic.github.io/natours/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Live Demo</a
+                >
+                <a
+                  class="btn btn-color-2 project-btn"
+                  href="https://github.com/lenapuletic/natours"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub</a
+                >
+              </div>
             </div>
-            <h2 class="experience-sub-title project-title">Calculator App</h2>
-            <div class="btn-container projects-btn-container">
-              <a
-                href="https://lenapuletic.github.io/calculator-app/"
-                target="_blank"
-              >
-                <button class="btn btn-color-2 project-btn">Live Demo</button>
-              </a>
-              <a
-                href="https://github.com/lenapuletic/calculator-app"
-                target="_blank"
-              >
-                <button class="btn btn-color-2 project-btn">Github</button>
-              </a>
+            <div class="details-container color-container" id="project4">
+              <div class="project-img-wrap">
+                <img
+                  src="./assets/calculator-app.png"
+                  alt="Calculator app screenshot"
+                  class="project-img"
+                  loading="lazy"
+                />
+              </div>
+              <h3 class="experience-sub-title project-title">Calculator App</h3>
+              <p class="project-desc">
+                A clean calculator UI offering standard arithmetic operations.
+              </p>
+              <ul class="project-tags" aria-label="Technologies">
+                <li class="tag">HTML</li>
+                <li class="tag">CSS</li>
+                <li class="tag">JavaScript</li>
+              </ul>
+              <div class="btn-container projects-btn-container">
+                <a
+                  class="btn btn-color-2 project-btn"
+                  href="https://lenapuletic.github.io/calculator-app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Live Demo</a
+                >
+                <a
+                  class="btn btn-color-2 project-btn"
+                  href="https://github.com/lenapuletic/calculator-app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub</a
+                >
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- Arrow icon for navigation -->
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href = './#experience'"
-      />
-    </section>
+        <a href="#experience" class="arrow-link" aria-label="Go to Experience">
+          <img
+            src="./assets/arrow.png"
+            alt=""
+            class="icon arrow"
+            loading="lazy"
+            width="32"
+            height="32"
+          />
+        </a>
+      </section>
 
-    <!-- Experience Section-->
-    <section id="experience">
-      <!-- Section heading -->
-      <p class="section_text_p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <!-- Experience details -->
-      <div class="experience-details-container">
-        <div class="experience-containers">
-          <!-- Work Expirience -->
-          <div class="details-container">
-            <h2 class="experience-sub-title">Work Experience</h2>
-            <div class="article-container">
-              <article class="work-experience">
-                <div class="work-heading">
-                  <img
-                    src="./assets//checkmark.png"
-                    alt="ExperienceIcon"
-                    class="icon"
-                  />
-                  <h3>Frontend Engineer</h3>
-                </div>
-                <i>August 2025 - Now</i>
-              </article>
-              <article class="work-experience">
-                <div class="work-heading">
-                  <img
-                    src="./assets//checkmark.png"
-                    alt="ExperienceIcon"
-                    class="icon"
-                  />
-                  <h3>Junior Frontend Engineer</h3>
-                </div>
-                <i>June 2024 - July 2025</i>
-              </article>
-              <article class="work-experience">
-                <div class="work-heading">
-                  <img
-                    src="./assets//checkmark.png"
-                    alt="ExperienceIcon"
-                    class="icon"
-                  />
-                  <h3>Frontend Engineer Intern</h3>
-                </div>
-                <i>December 2023 - May 2024</i>
-              </article>
+      <section id="experience">
+        <p class="section_text_p1">Explore My</p>
+        <h2 class="title">Experience</h2>
+        <div class="experience-details-container">
+          <div class="experience-containers">
+            <div class="details-container">
+              <!-- <h3 class="experience-sub-title">Work Experience</h3> -->
+              <div class="article-container article-container--work">
+                <article class="work-experience">
+                  <div class="work-heading">
+                    <img
+                      src="./assets/checkmark.png"
+                      alt=""
+                      class="icon"
+                      loading="lazy"
+                    />
+                    <h4>Frontend Engineer</h4>
+                    <div class="work-meta-row">
+                      <span class="work-company">Grid Dynamics</span>
+                      <span class="work-dates">December 2023 — Present</span>
+                    </div>
+                  </div>
+                  <ul class="work-impact">
+                    <li>
+                      Engineered scalable <strong>Wealth Management</strong> applications using <strong>Angular 19</strong> and <strong>TypeScript</strong>, 
+                      implementing reusable UI components and integrating complex RESTful APIs for real-time data handling
+                    </li>
+                    <li>
+                      Implemented <strong>micro-frontend architecture</strong> and migrated legacy state management to <strong>NgRx SignalStore</strong>, 
+                      significantly reducing boilerplate and enabling independent, faster module deployments
+                    </li>
+                    <li>
+                      Streamlined asynchronous data flows using <strong>RxJS Observables</strong> and Clean Code principles to enhance application responsiveness, 
+                      maintainability, and user entitlement security
+                    </li>
+                    <li>
+                      Maintained <strong>>90% test coverage with Jest</strong> within an Agile Scrum environment, 
+                      drastically reducing production bug rates and ensuring high-reliability software delivery
+                    </li>
+                  </ul>
+                </article>
+              </div>
             </div>
-          </div>
-          <!-- Good knowledge -->
-          <div class="details-container">
-            <h2 class="experience-sub-title">Tech Stack</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets//checkmark.png"
-                  alt="ExperienceIcon"
-                  class="icon"
-                />
-                <h3>Angular</h3>
-              </article>
-              <article>
-                <img
-                  src="./assets//checkmark.png"
-                  alt="ExperienceIcon"
-                  class="icon"
-                />
-                <h3>React</h3>
-              </article>
-              <article>
-                <img
-                  src="./assets//checkmark.png"
-                  alt="ExperienceIcon"
-                  class="icon"
-                />
-                <h3>TypeScript</h3>
-              </article>
-              <article>
-                <img
-                  src="./assets//checkmark.png"
-                  alt="ExperienceIcon"
-                  class="icon"
-                />
-                <h3>JavaScript</h3>
-              </article>
-              <article>
-                <img
-                  src="./assets//checkmark.png"
-                  alt="ExperienceIcon"
-                  class="icon"
-                />
-                <h3>HTML</h3>
-              </article>
-              <article>
-                <img
-                  src="./assets//checkmark.png"
-                  alt="ExperienceIcon"
-                  class="icon"
-                />
-                <h3>CSS</h3>
-              </article>
-              <article>
-                <img
-                  src="./assets//checkmark.png"
-                  alt="ExperienceIcon"
-                  class="icon"
-                />
-                <h3>Sass</h3>
-              </article>
-              <article>
-                <img
-                  src="./assets//checkmark.png"
-                  alt="ExperienceIcon"
-                  class="icon"
-                />
-                <h3>Tailwind CSS</h3>
-              </article>
-              <article>
-                <img
-                  src="./assets//checkmark.png"
-                  alt="ExperienceIcon"
-                  class="icon"
-                />
-                <h3>Vitest</h3>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Arrow icon for navigation -->
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href = './#about'"
-      />
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-      <!-- Section heading -->
-      <p class="section_text_p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="about-details-container">
-          <!-- Personal description -->
-          <div class="text-container">
-            <p>
-              Ambitious and dedicated Frontend Engineer with a strong foundation
-              in web development and a passion for crafting engaging user
-              experiences. Passionate about building Angular applications,
-              implementing micro-frontend architectures, optimizing state
-              management with NgRx and RxJS, and integrating RESTful APIs with
-              full CRUD operations.
-              <br /><br />
-              Skilled in HTML, CSS, JavaScript, TypeScript and Angular, with a
-              keen eye for detail. Committed to continuous learning, staying
-              current with industry trends, and driving ongoing professional
-              growth.
-              <br /><br /><br />
-            </p>
           </div>
           <div class="about-containers">
-            <!-- Education -->
-            <div class="details-container">
-              <img
-                src="assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>Faculty of Organizational Sciences<br /></p>
-              <p class="smaller-font">Information Systems and Technology</p>
-            </div>
-            <!-- Completed courses -->
-            <div
-              class="details-container certification"
-              onclick="
-                window.open('./assets/AssociateCloudEngineer-LenaPuletic.pdf')
-              "
-            >
-              <img
-                src="assets/experience.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Certification</h3>
-              <p>Google Cloud Platform<br /></p>
-              <p class="smaller-font">Associate Cloud Engineer</p>
+              <div class="details-container">
+                <h3 class="experience-sub-title">Tech Stack</h3>
+                <div class="article-container">
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt=""
+                      class="icon"
+                      loading="lazy"
+                    />
+                    <h4>Angular</h4>
+                  </article>
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt=""
+                      class="icon"
+                      loading="lazy"
+                    />
+                    <h4>React</h4>
+                  </article>
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt=""
+                      class="icon"
+                      loading="lazy"
+                    />
+                    <h4>TypeScript</h4>
+                  </article>
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt=""
+                      class="icon"
+                      loading="lazy"
+                    />
+                    <h4>JavaScript</h4>
+                  </article>
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt=""
+                      class="icon"
+                      loading="lazy"
+                    />
+                    <h4>HTML</h4>
+                  </article>
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt=""
+                      class="icon"
+                      loading="lazy"
+                    />
+                    <h4>CSS</h4>
+                  </article>
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt=""
+                      class="icon"
+                      loading="lazy"
+                    />
+                    <h4>Sass</h4>
+                  </article>
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt=""
+                      class="icon"
+                      loading="lazy"
+                    />
+                    <h4>Tailwind CSS</h4>
+                  </article>
+                  <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt=""
+                      class="icon"
+                      loading="lazy"
+                    />
+                    <h4>Vitest</h4>
+                  </article>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- Arrow icon for navigation-->
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href = './#contact'"
-      />
-    </section>
-
-    <!-- Contact Section-->
-    <section id="contact">
-      <!-- Section heading -->
-      <p class="section_text_p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <!-- Contact information -->
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
+        <a href="#about" class="arrow-link" aria-label="Go to About">
           <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
+            src="./assets/arrow.png"
+            alt=""
+            class="icon arrow"
+            loading="lazy"
+            width="32"
+            height="32"
           />
-          <p>
-            <a href="mailto:puleticlena@gmail.com" target="_blank"
-              >puleticlena@gmail.com</a
-            >
-          </p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="Linkedin icon"
-            class="icon contact-icon"
-          />
-          <p>
-            <a href="https://www.linkedin.com/in/lena-puletic/" target="_blank"
-              >LinkedIn</a
-            >
-          </p>
-        </div>
-      </div>
-    </section>
+        </a>
+      </section>
 
-    <!-- Footer -->
+      <section id="about">
+        <p class="section_text_p1">Get To Know More</p>
+        <h2 class="title">About Me</h2>
+        <div class="section-container">
+          <div class="about-details-container">
+            <div class="text-container">
+              <p>
+                <b>Angular-specialized Frontend Engineer</b> focused on building clean, responsive, and maintainable web applications. 
+                I specialize in developing complex systems using <b>micro-frontends</b>, optimizing state with <b>NgRx</b> and <b>RxJS</b>, 
+                and streamlining delivery through an <b>AI-first development approach</b>.
+                <br /><br />
+                I'm committed to writing code that is as maintainable as it is performant, ensuring seamless integration with RESTful APIs 
+                and a keen eye for UX detail. While my core expertise lies in the Angular ecosystem, I remain an adaptable learner, 
+                staying current with the broader frontend landscape.
+                <br /><br />
+              </p>
+            </div>
+            <div class="about-containers">
+              <div class="details-container">
+                <img
+                  src="assets/experience.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>Education</h3>
+                <p>Faculty of Organizational Sciences<br /></p>
+                <p class="smaller-font">Information Systems and Technology</p>
+              </div>
+              <div
+                class="details-container certification"
+                onclick="
+                  window.open('./assets/AssociateCloudEngineer-LenaPuletic.pdf')
+                "
+              >
+                <img
+                  src="assets/experience.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+                <h3>Certification</h3>
+                <p>Google Cloud Platform<br /></p>
+                <p class="smaller-font">Associate Cloud Engineer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#contact" class="arrow-link" aria-label="Go to Contact">
+          <img
+            src="./assets/arrow.png"
+            alt=""
+            class="icon arrow"
+            loading="lazy"
+            width="32"
+            height="32"
+          />
+        </a>
+      </section>
+
+      <section id="contact">
+        <p class="section_text_p1">Get in Touch</p>
+        <h2 class="title">Contact Me</h2>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/email.png"
+              alt=""
+              class="icon contact-icon email-icon"
+              loading="lazy"
+            />
+            <p>
+              <a href="mailto:puleticlena@gmail.com">puleticlena@gmail.com</a>
+            </p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/linkedin.png"
+              alt=""
+              class="icon contact-icon"
+              loading="lazy"
+            />
+            <p>
+              <a
+                href="https://www.linkedin.com/in/lena-puletic/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >LinkedIn</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <footer>
-      <!-- Navigation links -->
-      <nav>
+      <nav aria-label="Footer">
         <div class="nav-links-container">
           <ul class="nav-links">
             <li><a href="#projects">Projects</a></li>
